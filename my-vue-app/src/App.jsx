@@ -1,8 +1,10 @@
+import Login from "./pages/Login"
+
 const App = () => {
   return (
-    <>
-      <p className="text-red-500">Configurazione iniziale</p>
-    </>
+    <div className="relative z-0">
+      <Login />
+    </div>
   )
 }
 
