@@ -19,7 +19,7 @@ const Login = () => {
         setPassword(newPassword)
     }
 
-    const checkMail = (e) => {
+    const checkMail = () => {
         const checkEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         !checkEmail.test(email) ? setErrorEmail(true) : setErrorEmail(false)
     }
@@ -32,7 +32,7 @@ const Login = () => {
     return (
         <GoogleOAuthProvider clientId="1082519138882-s29tv6ul25qplnneoi1u907rpsgcrhct.apps.googleusercontent.com">
             <div className="w-full h-screen flex justify-center bg-gradient-to-r from-fuchsia-600 to-sky-500 bg-center bg-cover bg-no-repeat">
-                <div className="flex flex-row w-[80%]">
+                <div className="flex flex-row w-[80%] max-[768px]:w-[95%]">
                     <div className="w-full flex flex-row p-10 max-[760px]:px-1 max-[760px]:my-2">
                         <div className="bg-login-background bg-center bg-cover bg-no-repeat w-[50%] rounded-l-lg max-[760px]:hidden"></div>
                             <div className=" max-[760px]:w-full max-[760px]:rounded-l-lg  flex flex-col justify-center items-center bg-white w-[50%] rounded-r-lg shadow-[0px_20px_20px_10px_#00000030] gap-5 p-10">
